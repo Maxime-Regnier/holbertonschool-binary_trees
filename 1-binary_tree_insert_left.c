@@ -19,7 +19,7 @@ if (parent->left)
 {
 new_node->left = parent->left;
 parent->left->parent = new_node;
-parent->left = new_node;
 }
+parent->left = new_node;
 return (new_node);
 }
