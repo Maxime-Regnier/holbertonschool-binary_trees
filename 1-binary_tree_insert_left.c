@@ -12,10 +12,14 @@ if (parent == NULL)
 return (NULL);
 new_node = binary_tree_node(parent, value);
 if (new_node == NULL)
+{
 return (NULL);
+}
 if (parent->left)
+{
 new_node->left = parent->left;
 parent->left->parent = new_node;
 parent->left = new_node;
+}
 return (new_node);
 }
