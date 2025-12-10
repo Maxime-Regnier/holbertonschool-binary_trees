@@ -23,7 +23,7 @@ new_node->n = value;
 new_node->parent = parent;
 new_node->left = NULL;
 }
-if (parent-> right != NULL)
+if (parent->right != NULL)
 {
 new_node->right = parent->right;
 parent->right->parent = new_node;
